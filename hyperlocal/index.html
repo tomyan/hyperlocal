@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `hyperlocal` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, hyperlocal">
+
+    <title>hyperlocal - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'hyperlocal', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>hyperlocal</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/hyperlocal/src/lib.rs.html#1-248' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>hyperlocal provides <a href="http://github.com/hyperium/hyper">hyper</a> client and server bindings
+for <a href="http://rust-lang-nursery.github.io/unix-socket/doc/v0.5.0/unix_socket/">unix domain sockets</a></p>
+
+<p>See the <code>UnixSocketConnector</code> docs for how to configure hyper clients and the <code>UnixSocketServer</code> docs
+for how to configure hyper servers</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainUrl.html'
+                                  title='hyperlocal::DomainUrl'>DomainUrl</a></td>
+                           <td class='docblock-short'>
+                                <p>A type which implements hyper&#39;s IntoUrl interface
+for unix domain sockets. You can use this with any of
+the HTTP factory methods on hyper&#39;s Client interface.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnixSocketConnector.html'
+                                  title='hyperlocal::UnixSocketConnector'>UnixSocketConnector</a></td>
+                           <td class='docblock-short'>
+                                <p>A type which implements hyper&#39;s NetworkConnector trait
+for unix domain sockets
+A type which implements hyper&#39;s IntoUrl interface
+for unix domain sockets. You can use this with any of
+the HTTP factory methods on hyper&#39;s Client interface.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnixSocketListener.html'
+                                  title='hyperlocal::UnixSocketListener'>UnixSocketListener</a></td>
+                           <td class='docblock-short'>
+                                <p>A type which implements hyper&#39;s NetworkListener trait</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnixSocketServer.html'
+                                  title='hyperlocal::UnixSocketServer'>UnixSocketServer</a></td>
+                           <td class='docblock-short'>
+                                <p>A type that provides a factory interface for creating
+unix socket based hyper Servers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnixSocketStream.html'
+                                  title='hyperlocal::UnixSocketStream'>UnixSocketStream</a></td>
+                           <td class='docblock-short'>
+                                <p>A type which implements hyper&#39;s NetworkStream trait</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "hyperlocal";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
